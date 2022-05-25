@@ -21,6 +21,7 @@
   --cT : #77966D;
   --cF : #8F250C;
   --c1 : #849bd7;
+  --c1 : red;
   --c1foc : #a7b9e2;
   --c2 : #14213d;
   --c3 : #e5e5e5;
@@ -505,4 +506,60 @@ footer {
 
 .footer-nav-bar > a {
   color: var(--cltxt);
+}
+
+
+/* COMMENTAIRES */
+
+.test {
+  color: gray;
+  text-decoration: underline;
+}
+
+.txt-center {
+  text-align: center;
+}
+.hide {
+display: none;
+}
+
+.clear {
+float: none;
+clear: both;
+}
+
+.rating {
+  width: 300px;
+  unicode-bidi: bidi-override;
+  /* direction: rtl; */
+  /* text-align: center; */
+  position: relative;
+  font-size: 50px;
+}
+
+.rating > label {
+  float: right;
+  display: inline;
+  padding: 0;
+  margin: 0;  
+  position: relative;
+  width: 1.1em;
+  cursor: pointer;
+  color: #000;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+  color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+  content: "\2605";
+  position: absolute;
+  left: 0;
+  color: black;
 }
