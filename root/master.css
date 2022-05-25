@@ -4,36 +4,41 @@
 }
 
 @font-face {
-  font-family: futura-heavy;
-  src: url(../GFX/fonts/futura/futura-heavy-italic.ttf);
+  font-family: blatant-bold;
+  src: url(../GFX/fonts/blatant/blatant-bolditalic.otf);
 }
 
+@font-face {
+  font-family: blatant;
+  src: url(../GFX/fonts/blatant/blatant.otf);
+}
+
+
 :root {
-  --cdtxt : #000000;
+  --cdtxt : #ffffff;
   --cdtxtfoc : #555555;
-  --cltxt : #ffffff;
+  --cltxt : #333232;
   --cplaceholder: #aaaaaa;
   --cunfocused: #555555;
   --cshearchbar: #ffffff;
 
-  --cbrdr : #ffffff88;
+  --cbrdr : #333232;
   
   --cT : #77966D;
-  --cF : #8F250C;
-  --c1 : #849bd7;
-  --c1 : red;
-  --c1foc : #a7b9e2;
-  --c2 : #14213d;
-  --c3 : #e5e5e5;
+  --cF : #DB5461;
+  --c1 : #FFCF00;
+  --c1foc : #FFDD47;
+  --c2 : #1F1E1E;
+  --c3 : #333232;
 
   --shdw-l : 0 10px 20px -8px #0000001a;
   --shdw-n : 0 10px 20px -8px #0000004d;
   --shdw-d : 10px 10px 40px 0 #00000099;
   --shdw-ins : inset 0 0 20px #ffffff4d;
 
-  --g1 : linear-gradient(#e5e5e5, #93a9dc);
-  --g2 : linear-gradient(#3d475e, #14213d)
-
+  --g1 : linear-gradient(#464649, #333232);
+  --g2 : linear-gradient(#FEEFE5, #FEEFE5);
+  --g2 : linear-gradient(#C287E8, #C287E8);
 
 }
 
@@ -45,7 +50,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: futura-medium-bt, Arial;
+  font-family: blatant, futura-medium-bt, Arial;
 }
 
 a {
@@ -59,7 +64,7 @@ a:hover {
 
 h1 {
   font-size: 3em;
-  font-family: futura-heavy, Arial;
+  font-family: blatant-bold, Arial;
   font-weight: bold;
 }
 
@@ -84,6 +89,7 @@ button {
   padding-right: 20px;
   box-shadow: var(--shdw-n);
   box-shadow: var(--shdw-ins);
+  border: 2px solid var(--c3);
 }
 button:hover {
   background-color: var(--c1foc);
@@ -114,7 +120,7 @@ header {
   z-index: 1030; /* to prevent the navbar getting covered up by other content */
 
   background: #e5e5e5e6;
-  box-shadow: 0 8px 32px 0 #1f26875e;
+  box-shadow: 0 8px 50px 0 #C287E822;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid #ffffff2e;
@@ -157,7 +163,7 @@ header {
   outline: none;
   color: var(--cunfocused);
   font-size: 24px;
-  font-family: futura-medium-bt, Arial;
+  font-family: blatant, Arial;
   line-height: 1px;
   padding-left: 18px;
 }
@@ -167,8 +173,8 @@ header {
 }
 
 .search-btn {
-  width: 48px;
   min-width: 48px;
+  width: 48px;
   height: 48px;
   background: var(--c1);
   text-align: center;
@@ -189,7 +195,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 3em;
+  height: 1em;
 }
 
 .showcase-h1 {
@@ -201,7 +207,7 @@ header {
   right: 0;
   text-align: center;
   font-size: 3em;
-  font-family: futura-heavy, Arial;
+  font-family: blatant-bold, Arial;
 }
 
 .showcase-h2 {
@@ -212,13 +218,13 @@ header {
   right: 0;
   text-align: center;
   font-size: 1em;
-  font-family: futura-heavy, Arial;
+  font-family: blatant-bold, Arial;
 }
 
 .card {
   box-shadow: var(--shdw-ins);
   box-shadow: var(--shdw-d);
-  border: 1px solid var(--cbrdr);
+  border: 2px solid var(--cbrdr);
 }
 
 .section-showcase {
@@ -227,7 +233,8 @@ header {
 }
 
 canvas {
-  background-image: url(../GFX/models/bg.png);
+  /* background-image: url(../GFX/models/bg/bg.gif); */
+  background-color: #00A37D;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -239,7 +246,7 @@ canvas {
 }
 
 .showcase-btn {
-  bottom: 10px;
+  bottom: 2em;
   max-width: 280px;
   z-index: 2;
   position: absolute;
@@ -430,12 +437,15 @@ form {
   min-width: 48px;
   height: 48px;
   background: none;
+  box-shadow: none;
   text-align: center;
   color: var(--cdtxt);
   border-radius: 48px;
   cursor: pointer;
   padding: 0;
   margin-left: calc(240px - 48px);
+  border: none;
+  color: var(--cltxt);
 }
 
 .fav-btn:hover {
@@ -460,7 +470,7 @@ form {
 }
 
 .card-name {
-  color: var(--c3);
+  color: var(--cdtxt);
   border-radius: 0 0 19px 19px;
   /* border: pink solid 5px; */
   background-image: linear-gradient(#191919, #111);
@@ -490,7 +500,12 @@ footer {
   width: 200px;
 }
 
+.footer-image {
+  width: 100%;
+}
+
 .footer-h2 {
+  color: var(--cdtxt);
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -505,7 +520,7 @@ footer {
 }
 
 .footer-nav-bar > a {
-  color: var(--cltxt);
+  color: var(--cdtxt);
 }
 
 
