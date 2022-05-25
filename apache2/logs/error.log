@@ -13,3 +13,4 @@
 [Wed May 25 15:05:36.455032 2022] [mpm_winnt:notice] [pid 25992:tid 468] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
 [Wed May 25 15:05:36.455032 2022] [core:notice] [pid 25992:tid 468] AH00094: Command line: 'C:\\Users\\erade\\Documents\\school\\gyro/apache2/bin/httpd_usbwv8.exe -d C:/Users/erade/Documents/school/gyro/apache2'
 [Wed May 25 15:05:36.458034 2022] [mpm_winnt:notice] [pid 25992:tid 468] AH00418: Parent: Created child process 23680
+[Wed May 25 15:05:36.956146 2022] [mpm_winnt:notice] [pid 23680:tid 792] AH00354: Child: Starting 64 worker threads.
