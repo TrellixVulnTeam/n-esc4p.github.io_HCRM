@@ -2,7 +2,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Gestion</title>
+    <title>Info</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" href="../../master.css" />
 </head>
@@ -68,7 +68,7 @@
     //Fin de la connexion à la BDD
     mysql_close();
     ?>
-    <p><a href="index.php">Retour au formulaire</a></p>
+    <p><a href="commentaires.php">Retour au formulaire</a></p>
 </body>
 
 </html>

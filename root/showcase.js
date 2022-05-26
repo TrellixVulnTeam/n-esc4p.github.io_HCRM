@@ -59,10 +59,10 @@ scene.add(pointLight0, pointLight1, pointLight2, ambientLight);
 
 const loader = new GLTFLoader().setPath("./GFX/models/");
 loader.load("showcase5.gltf", function (object) {
-let s = 120;
-object.scene.scale.set(s, s, s);
-object.scene.position.set(0, -3, 0);
-scene.add(object.scene);
+    let s = 120;
+    object.scene.scale.set(s, s, s);
+    object.scene.position.set(0, -3, 0);
+    scene.add(object.scene);
 });
 
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -73,9 +73,9 @@ controls.enablePan = false;
 
 
 function animate() {
-controls.update();
-requestAnimationFrame(animate);
-renderer.render(scene, camera);
+    controls.update();
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
 }
 
 animate();
@@ -84,8 +84,9 @@ animate();
 window.addEventListener( 'resize', onWindowResize );
 
 function onWindowResize() {
-camera.aspect = window.innerWidth / window.innerHeight;
-camera.updateProjectionMatrix();
-renderer.setSize(window.innerWidth / 1.2, window.innerHeight / 1.2);
-animate();
+    // controls.autoRotateSpeed = 1;
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth / 1.2, window.innerHeight / 1.2);
+    // animate();
 }

@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Gyro - Acceuil</title>
-    <link rel="stylesheet" href="../css/master.css">
-    <link rel="icon" type="../image/x-icon" href="favicon.png">
-    <script src="https://kit.fontawesome.com/66a5a2e7fe.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <title>Gyro - Se Connecter</title>
+    <link rel="stylesheet" href="../master.css" />
+    <link rel="icon" type="../image/x-icon" href="favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/66a5a2e7fe.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <div class="header-body">
         <a href="../index.html"
-          ><img src="../GFX/logo/PNG/logo-with-text.png" id="logo-main"
+          ><img src="../GFX/logo/PNG/logo-with-text-white.png" id="logo-main"
         /></a>
 
         <div class="wrap">
@@ -19,16 +22,19 @@
             <input
               type="text"
               class="search-txt"
-              placeholder="Search for ..."
+              placeholder="Rechercher ..."
             />
             <button type="submit" class="search-btn">
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             </button>
           </div>
         </div>
 
-        <button onclick="window.location.href='signup.html';">
-          Créer un compte
+        <button
+          onclick="window.location.href='connect.html';"
+          class="identify-btn"
+        >
+          Créer un Compte
           <svg
             class="arrow"
             aria-hidden="true"
@@ -42,33 +48,55 @@
         </button>
       </div>
       <ul class="nav-bar">
-        <a href="google.com">Audio</a>
-        <a href="">Vidéo</a>
-        <a href="">Ordinateurs</a>
-        <a href="">Périfériques</a>
-        <a href="">Plus d'informations</a>
+        <a href="../index.html#category-audio">Audio</a>
+        <a href="../index.html#category-video">Vidéo</a>
+        <a href="../index.html#category-ordinateurs">Ordinateurs</a>
+        <a href="../index.html#category-periferiques">Périfériques</a>
+        <a href="commentaires/commentaires.php">Commentaires</a>
+        <a href="info.html">Plus d'informations</a>
       </ul>
     </header>
     <div class="section-signup">
       <div class="signup-card card">
         <div class="warp-signup">
-          <img src="../GFX/logo/PNG/logo-with-text.png" alt="logo" class="logo-with-text">
+          <img
+            src="../GFX/logo/PNG/logo-with-text.png"
+            alt="logo"
+            class="logo-with-text"
+          />
         </div>
         <div class="warp-signup">
-          <span class="alert"> Veuillez prendre compte que ceci n'est pas un vrai site web. <br> Veuillez ne pas entrer votre vrai mot de passe.</span> <br> <br>
+          <span class="alert">
+            Veuillez prendre compte que ceci n'est pas un vrai site web. <br />
+            Veuillez ne pas entrer votre vrai mot de passe.</span
+          >
+          <br />
+          <br />
 
-          <form action="" method="post">
-            
-            <span id="captcha" style="color:red"></span> <!-- this will show captcha errors -->
-            <input type="email" class="signup-txt" placeholder="email">
-            <input type="password" class="signup-txt" placeholder="mot de passe">
+          <form action="" method="post" class="form-connect">
+            <!-- this will show captcha errors -->
+            <input type="email" class="signup-input" placeholder="email" />
+            <input
+              type="password"
+              class="signup-input"
+              placeholder="mot de passe"
+            />
 
-            <button type="submit" class="button signup-btn">Se Connecter</button>
+            <button type="submit" class="button signup-btn">
+              Se Connecter
+            </button>
           </form>
           <div class="a-signup">
             <a href="signup.html">
-              <svg class="arrow arrow-dark" aria-hidden="true" viewBox="0 0 63 99" focusable="false">
-                <path d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"></path>
+              <svg
+                class="arrow"
+                aria-hidden="true"
+                viewBox="0 0 63 99"
+                focusable="false"
+              >
+                <path
+                  d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"
+                ></path>
               </svg>
               créer un compte
             </a>
@@ -82,17 +110,17 @@
           <ul class="footer-body-column">
             <li class="footer-h2">Service Client</li>
             <li>
-              <a href="pages/others/no.html"> Livraison et installation </a>
+              <a href="pages/others/fast.html"> Livraison et installation </a>
             </li>
-            <li><a href="pages/others/yes.html"> Paiement </a></li>
+            <li><a href="pages/others/fast.html"> Paiement </a></li>
             <li><a href="signup.html"> Créer un compte </a></li>
             <li><a href="connect.html"> Se connecter </a></li>
             <li><a href=""> Commander </a></li>
             <li><a href=""> Toutes les commandes </a></li>
             <li>
-              <a href="pages/others/more.html">
+              <a href="pages/others/fast.html">
                 <svg
-                  class="arrow arrow-dark"
+                  class="arrow arrow-ondark"
                   aria-hidden="true"
                   viewBox="0 0 63 99"
                   focusable="false"
@@ -110,20 +138,20 @@
           <ul class="footer-body-column">
             <li class="footer-h2">Business</li>
             <li>
-              <a href="pages/others/no.html"> Commande professionnelle </a>
+              <a href="pages/others/fast.html"> Commande professionnelle </a>
             </li>
             <li>
-              <a href="pages/others/no.html"> Chèques-cadeaux business </a>
+              <a href="pages/others/fast.html"> Chèques-cadeaux business </a>
             </li>
-            <li><a href="pages/others/no.html"> Boutique de cadeaux </a></li>
+            <li><a href="pages/others/fast.html"> Boutique de cadeaux </a></li>
             <li>
-              <a href="pages/others/jsp.html"> Programme d'affiliation </a>
+              <a href="pages/others/fast.html"> Programme d'affiliation </a>
             </li>
-            <li><a href="pages/others/no.html"> Choose Your Own Device </a></li>
+            <li><a href="pages/others/fast.html"> Choose Your Own Device </a></li>
             <li>
               <a href="">
                 <svg
-                  class="arrow arrow-dark"
+                  class="arrow arrow-ondark"
                   aria-hidden="true"
                   viewBox="0 0 63 99"
                   focusable="false"
@@ -188,7 +216,7 @@
                 target="black_"
               >
                 <svg
-                  class="arrow arrow-dark"
+                  class="arrow arrow-ondark"
                   aria-hidden="true"
                   viewBox="0 0 63 99"
                   focusable="false"
@@ -205,20 +233,20 @@
         <li>
           <ul class="footer-body-column">
             <li class="footer-h2">À propos de GYRO</li>
-            <li><a href="pages/others/jsp.html"> Notre assortiment </a></li>
+            <li><a href="pages/others/fast.html"> Notre assortiment </a></li>
             <li>
-              <a href="pages/others/more.html"> Site web d'entreprise </a>
+              <a href="pages/others/fast.html"> Site web d'entreprise </a>
             </li>
-            <li><a href="pages/others/more.html"> Blog </a></li>
-            <li><a href="pages/others/more.html"> L'actu </a></li>
-            <li><a href="pages/others/no.html"> Travailler chez GYRO </a></li>
-            <li><a href="pages/others/no.html"> Jobs développeurs web </a></li>
-            <li><a href="pages/others/no.html"> L'appli GYRO </a></li>
-            <li><a href="pages/others/no.html"> Confidentialité </a></li>
+            <li><a href="pages/others/fast.html"> Blog </a></li>
+            <li><a href="pages/others/fast.html"> L'actu </a></li>
+            <li><a href="pages/others/fast.html"> Travailler chez GYRO </a></li>
+            <li><a href="pages/others/fast.html"> Jobs développeurs web </a></li>
+            <li><a href="pages/others/fast.html"> L'appli GYRO </a></li>
+            <li><a href="pages/others/fast.html"> Confidentialité </a></li>
             <li>
               <a href="">
                 <svg
-                  class="arrow arrow-dark"
+                  class="arrow arrow-ondark"
                   aria-hidden="true"
                   viewBox="0 0 63 99"
                   focusable="false"
@@ -237,9 +265,9 @@
         <a href="https://youtu.be/dQw4w9WgXcQ" target="blank_"
           >© 2022, GYRO, inc. Aucun Droit Réservé</a
         >
-        <a href="pages/others/no.html">Conditions d'utilisation</a>
-        <a href="pages/others/no.html">Engagement de confidialité</a>
-        <a href="pages/others/no.html">Plan du site</a>
+        <a href="pages/others/fast.html">Conditions d'utilisation</a>
+        <a href="pages/others/fast.html">Engagement de confidialité</a>
+        <a href="pages/others/fast.html">Plan du site</a>
         <a href="pages/info.html">Plus d'informations</a>
       </ul>
     </footer>
