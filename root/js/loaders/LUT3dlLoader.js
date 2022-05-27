@@ -1,6 +1,6 @@
 ( function () {
 
-	// http://download.autodesk.com/us/systemdocs/help/2011/lustre/index.html?url=./files/WSc4e151a45a3b785a24c3d9a411df9298473-7ffd.htm,topicNumber=d0e9492
+	// http://download.autodesk.com/us/systemdocs/help/2011/lustre/index.php?url=./files/WSc4e151a45a3b785a24c3d9a411df9298473-7ffd.htm,topicNumber=d0e9492
 	class LUT3dlLoader extends THREE.Loader {
 
 		load( url, onLoad, onProgress, onError ) {

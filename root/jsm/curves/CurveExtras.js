@@ -10,7 +10,7 @@ import {
  * http://mathworld.wolfram.com/HeartCurve.html
  * http://en.wikipedia.org/wiki/Viviani%27s_curve
  * http://www.mi.sanu.ac.rs/vismath/taylorapril2011/Taylor.pdf
- * https://prideout.net/blog/old/blog/index.html@p=44.html
+ * https://prideout.net/blog/old/blog/index.php@p=44.html
  */
 
 // GrannyKnot

@@ -139,7 +139,7 @@ const SSRShader = {
 			#endif
 
 			float maxReflectRayLen=maxDistance/dot(-viewIncidentDir,viewNormal);
-			// dot(a,b)==length(a)*length(b)*cos(theta) // https://www.mathsisfun.com/algebra/vectors-dot-product.html
+			// dot(a,b)==length(a)*length(b)*cos(theta) // https://www.mathsisfun.com/algebra/vectors-dot-product.php
 			// if(a.isNormalized&&b.isNormalized) dot(a,b)==cos(theta)
 			// maxDistance/maxReflectRayLen=cos(theta)
 			// maxDistance/maxReflectRayLen==dot(a,b)

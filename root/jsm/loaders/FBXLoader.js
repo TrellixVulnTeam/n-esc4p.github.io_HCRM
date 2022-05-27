@@ -3931,7 +3931,7 @@ const tempVec = new Vector3();
 
 // generate transformation from FBX transform data
 // ref: https://help.autodesk.com/view/FBX/2017/ENU/?guid=__files_GUID_10CDD63C_79C1_4F2D_BB28_AD2BE65A02ED_htm
-// ref: http://docs.autodesk.com/FBX/2014/ENU/FBX-SDK-Documentation/index.html?url=cpp_ref/_transformations_2main_8cxx-example.html,topicNumber=cpp_ref__transformations_2main_8cxx_example_htmlfc10a1e1-b18d-4e72-9dc0-70d0f1959f5e
+// ref: http://docs.autodesk.com/FBX/2014/ENU/FBX-SDK-Documentation/index.php?url=cpp_ref/_transformations_2main_8cxx-example.html,topicNumber=cpp_ref__transformations_2main_8cxx_example_htmlfc10a1e1-b18d-4e72-9dc0-70d0f1959f5e
 function generateTransform( transformData ) {
 
 	const lTranslationM = new Matrix4();

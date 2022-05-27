@@ -87,7 +87,7 @@ h2 {
   text-transform: uppercase;
 }
 
-button {
+button, .button {
   border-radius: 64px;
   background-color: var(--c1);
   color: var(--dtxt);
@@ -106,7 +106,7 @@ button {
   border: var(--brdr);
 }
 
-button:hover {
+button:hover, .button:hover {
   background-color: var(--c1-foc);
 }
 
@@ -185,7 +185,7 @@ header {
 }
 
 .search-txt:focus {
-  color: var(--ltxt);
+  color: var(--dtxt);
 }
 
 .search-btn {
@@ -351,12 +351,6 @@ form {
   height: 30%;
 }
 
-.form-commentaires {
-  height: auto;
-  width: 15%;
-  position: sticky;
-}
-
 .alert {
   background-color: var(--cF);
   color: var(--ltxt);
@@ -382,7 +376,7 @@ form {
   opacity: 1;
 }
 
-.signup-input {
+.input {
   width: 80%;
   height: 48px;
   min-height: 48px;
@@ -397,7 +391,7 @@ form {
   box-shadow: var(--s1);
 }
 
-.signup-input:focus {
+.input:focus {
   color: var(--dtxt);
 }
 
@@ -479,7 +473,11 @@ form {
 
 .fav-btn:hover {
   background: none;
-  color: var(--dtxt-foc);
+}
+
+.fa-regular:hover {
+  /* color: var(--c1-foc); */
+  font-weight: 900;
 }
 
 .card-pic {
@@ -611,6 +609,41 @@ footer {
 
 /* COMMENTAIRES */
 
+.section-comments {
+  /* border: blue solid 5px; */
+  background-image: var(--bg3);
+  /* height: 100%; */
+}
+
+
+.form-commentaires {
+  font-size: 24px;
+  height: 60%;
+  width: 300px;
+  position: sticky;
+  align-items: unset;
+}
+
+.input-comment {
+  /* width: 80%; */
+  /* height: 32px; */
+  /* min-height: 48px; */
+  border: var(--brdr);
+  border-radius: 24px;
+  outline: none;
+  background-color: var(--inp-txt);
+  color: var(--dtxt);
+  font-size: 24px;
+  font-family: futura-medium-bt, Arial;
+  padding-left: 18px;
+  box-shadow: var(--s1);
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+}
+
 .test {
   color: gray;
   text-decoration: underline;
@@ -630,12 +663,13 @@ footer {
 }
 
 .rating {
-  width: 300px;
+  /* border: 1px solid red; */
+  width: 100%;
   unicode-bidi: bidi-override;
   /* direction: rtl; */
   /* text-align: center; */
   position: relative;
-  font-size: 50px;
+  font-size: 24px;
 }
 
 .rating>label {
@@ -647,6 +681,7 @@ footer {
   width: 1.1em;
   cursor: pointer;
   color: #000;
+  line-height: 24px;
 }
 
 .rating>label:hover,

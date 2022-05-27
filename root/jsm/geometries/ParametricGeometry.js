@@ -1,6 +1,6 @@
 /**
  * Parametric Surfaces Geometry
- * based on the brilliant article by @prideout https://prideout.net/blog/old/blog/index.html@p=44.html
+ * based on the brilliant article by @prideout https://prideout.net/blog/old/blog/index.php@p=44.html
  */
 
 import {
