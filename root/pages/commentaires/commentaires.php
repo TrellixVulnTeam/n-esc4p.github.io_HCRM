@@ -18,7 +18,7 @@
       <?php include('../../html/header.php'); ?>
   </header>
   <div class="section-comments">
-    <form action="gestion.php " method='post' class="form-commentaires">
+    <form action="gestion.php " method='post' class="form-commentaires card">
     <div class="rating">
       Évaluation: 
       <input id="star5" name="evaluation" type="radio" value="5" class="radio-btn hide" />
@@ -40,37 +40,47 @@
     <input type='submit' value='Supprimer' name='supprimer' class="button"/>
     <input type='reset' value='Annuler' class="button"/> <br>
     </form>
-    <?php
+    <div class="comments-card card">
+      <?php
 
-    require("connect.php");
-    $connexion = mysql_connect(SERVEUR, LOGIN, MDP);
-    if (!$connexion) {
-        echo "LA CONNEXION AU SERVEUR À ECHOUE\n";
-        exit;
-    }
-    mysql_select_db(BDD);
+      require("connect.php");
+      $connexion = mysql_connect(SERVEUR, LOGIN, MDP);
+      if (!$connexion) {
+          echo "LA CONNEXION AU SERVEUR À ECHOUE\n";
+          exit;
+      }
+      mysql_select_db(BDD);
 
-    // $currentDate = new date();
-    // echo $currentDate->format('Y-m-d H:i:s');
-    echo "<br/>";
+      // $currentDate = new date();
+      // echo $currentDate->format('Y-m-d H:i:s');
+      echo "<br/>";
 
-    $resultat = mysql_query("SELECT * FROM commentaires ORDER BY id DESC LIMIT 100");
-    while ($ligne = mysql_fetch_array($resultat)) {
-        echo '<span class="test">' . $ligne['datetime']. '</span>';
-        echo "&nbsp;&nbsp;";
-        if ($ligne['nom'] == "NESCAP") 
-            echo "<strong><font color='orange'>(le vrai) " . $ligne['nom'] . "</font></strong>";
-        
-        else 
-            echo $ligne['nom'];
-        echo "&nbsp;&nbsp;";
-        echo $ligne['evaluation'];
-        echo "<br/>";
-        echo $ligne['commentaire'];
-        echo "&nbsp;&nbsp;";
-        echo "<br/><br/>";
-    }
-    ?>
+      $resultat = mysql_query("SELECT * FROM commentaires ORDER BY id DESC LIMIT 100");
+      while ($ligne = mysql_fetch_array($resultat)) {
+          echo '<div class="comment card">';
+          echo '<span class="comment-date">' . $ligne['datetime']. '</span>';
+          echo "<br>";
+          if ($ligne['nom'] == "NESCAP") 
+          echo "<strong><font color='orange'>( le vrai ) " . $ligne['nom'] . "</font></strong>";
+          
+          else 
+          echo $ligne['nom'];
+          echo "&nbsp;&nbsp;";
+          for ($x = 0; $x <= $ligne['evaluation']-1; $x++) {
+            echo "★";
+          } 
+          for ($x = 0; $x <= 4 - $ligne['evaluation']; $x++) {
+            echo "☆";
+          }
+          // echo $ligne['evaluation'];
+          echo "<br/>";
+          echo $ligne['commentaire'];
+          echo "&nbsp;&nbsp;";
+          echo '</div>';
+      }
+      ?>
+    </div>
+    
   </div>
   <footer id="footer">
       <?php include('../../html/footer.php'); ?>

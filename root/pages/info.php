@@ -36,7 +36,7 @@
       <div class="goals-card card">
         <h2>8 Choses que GYRO veut améliorer:</h2>
         <ol>
-          <li>Optimiser le site pour les pc de l'école.</li>
+          <li>Optimiser le site pour les appareils plus faibles. (les pc de l'école).</li>
           <li>Ajouter une fonctionalité à la barre de recherche.</li>
           <li>Créer un sythème de comptes.</li>
           <li>Améliorer l'UI/UX.</li>
