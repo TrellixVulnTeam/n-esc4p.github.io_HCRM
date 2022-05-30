@@ -84,7 +84,6 @@ animate();
 window.addEventListener( 'resize', onWindowResize );
 
 function onWindowResize() {
-    // controls.autoRotateSpeed = 1;
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth / 1.2, window.innerHeight / 1.2);

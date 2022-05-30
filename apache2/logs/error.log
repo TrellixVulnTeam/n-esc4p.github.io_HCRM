@@ -1,8 +1,0 @@
-[Fri May 27 11:09:47.558661 2022] [mpm_winnt:notice] [pid 11268:tid 896] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
-[Fri May 27 11:09:47.558661 2022] [mpm_winnt:notice] [pid 11268:tid 896] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
-[Fri May 27 11:09:47.558661 2022] [core:notice] [pid 11268:tid 896] AH00094: Command line: 'C:\\Users\\erade\\Documents\\school\\gyro/apache2/bin/httpd_usbwv8.exe -d C:/Users/erade/Documents/school/gyro/apache2'
-[Fri May 27 11:09:47.561662 2022] [mpm_winnt:notice] [pid 11268:tid 896] AH00418: Parent: Created child process 15012
-[Fri May 27 11:09:48.115788 2022] [mpm_winnt:notice] [pid 15012:tid 776] AH00354: Child: Starting 64 worker threads.
-[Fri May 27 11:22:47.209762 2022] [:error] [pid 15012:tid 1284] [client 127.0.0.1:53412] PHP Notice:  Undefined index: evaluation in C:\\Users\\erade\\Documents\\school\\gyro\\root\\pages\\commentaires\\gestion.php on line 25, referer: http://localhost:8080/pages/commentaires/commentaires.php
-[Fri May 27 11:23:09.180718 2022] [:error] [pid 15012:tid 1284] [client 127.0.0.1:53423] PHP Notice:  Undefined index: evaluation in C:\\Users\\erade\\Documents\\school\\gyro\\root\\pages\\commentaires\\gestion.php on line 25, referer: http://localhost:8080/pages/commentaires/commentaires.php
-[Fri May 27 11:23:14.600941 2022] [:error] [pid 15012:tid 1284] [client 127.0.0.1:53423] PHP Notice:  Undefined index: evaluation in C:\\Users\\erade\\Documents\\school\\gyro\\root\\pages\\commentaires\\gestion.php on line 25, referer: http://localhost:8080/pages/commentaires/commentaires.php
