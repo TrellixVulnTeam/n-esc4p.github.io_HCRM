@@ -165,37 +165,61 @@
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp8.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>ATEM Mini</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp9.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>ATEM Mini Extreme ISO</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp10.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>HERO10 Black</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp11.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>Mavic 3</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp12.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>DJI FPV</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp13.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>Alpha 7 III</h2></div></div
           ></a>
         </div>
@@ -206,44 +230,72 @@
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp14.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>Core™ i9-12900HX</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp15.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>Ryzen™ 7 5700G</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp16.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>RTX 3090</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp17.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>Raspberry Pi</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
-              <div class="card-name"></div></div
+              <div class="card-pic"><img
+                  src="GFX/images/temp18.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
+              <div class="card-name"><h2>Hyperx fury</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
-              <div class="card-name"></div></div
+              <div class="card-pic"><img
+                  src="GFX/images/temp19.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
+              <div class="card-name"><h2>Be Quiet Light Wings</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
-              <div class="card-name"></div></div
+              <div class="card-pic"><img
+                  src="GFX/images/temp20.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
+              <div class="card-name"><h2>N7 Z590</h2></div></div
           ></a>
         </div>
       </div>
@@ -253,44 +305,72 @@
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp21.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>MX Keys Mini</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp22.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>MX Master 3</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp23.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>G915</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
+              <div class="card-pic"><img
+                  src="GFX/images/temp24.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
               <div class="card-name"><h2>G PRO</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
-              <div class="card-name"></div></div
+              <div class="card-pic"><img
+                  src="GFX/images/temp25.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
+              <div class="card-name"><h2>4K Pro Webcam</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
-              <div class="card-name"></div></div
+              <div class="card-pic"><img
+                  src="GFX/images/temp26.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
+              <div class="card-name"><h2>Alexa</h2></div></div
           ></a>
           <a href=""
             ><div class="category-card card">
               <button class="fav-btn"><i class="fa-regular fa-star"></i></button>
-              <div class="card-pic"></div>
-              <div class="card-name"></div></div
+              <div class="card-pic"><img
+                  src="GFX/images/temp27.png"
+                  alt=""
+                  class="card-pic-element"
+                /></div>
+              <div class="card-name"><h2>Google nest</h2></div></div
           ></a>
         </div>
       </div>
