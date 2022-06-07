@@ -1,6 +1,6 @@
 <?php
-define ('SERVEUR', "sql304.epizy.com");
-define ('LOGIN', "epiz_31864080");
-define ('MDP', "3Tjtj4Nbr8jhrV");
-define ('BDD', "epiz_31864080_membres");
+define ('SERVEUR', "sql206.ezyro.com");
+define ('LOGIN', "ezyro_31875818");
+define ('MDP', "dfcse40gaexz6q");
+define ('BDD', "ezyro_31875818_comments");
 ?>

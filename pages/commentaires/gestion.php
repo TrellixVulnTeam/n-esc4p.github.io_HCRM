@@ -21,65 +21,62 @@
             mysql_select_db(BDD);
             echo "<br/>";
             //Récupération des données du formulaire  
-            $nom = strtoupper(trim($_POST['nom']));
-            $email = $_POST['email'];
-            $commentaire = $_POST['commentaire'];
-            $evaluation = $_POST['evaluation'];
+            $nom = mysql_real_escape_string($_POST['nom']);
+            $email = mysql_real_escape_string($_POST['email']);
+            $commentaire = mysql_real_escape_string($_POST['commentaire']);
+            $evaluation = mysql_real_escape_string($_POST['evaluation']);
+
+            if ($evaluation > 5)
+            $evaluation = 5;
 
 
             echo "<br/>";
             echo "<br/>";
             //ajout d'un enregistrement dans la table commentaires
             if (isset($_POST['ajouter'])) {
-                if ($nom == "NESCAP")
-                    echo '<span class="alert">La requête n’a pu être exécutée parce que : c moi sa</span>';
-                else {
-                    echo "nom : $nom <br/> commentaire : $commentaire <br/> evaluation :";
-                     
-                    echo "&nbsp;&nbsp;";
-                    for ($x = 0; $x <= $evaluation-1; $x++) {
-                        echo "★";
+                echo "nom : $nom <br/> commentaire : $commentaire <br/> evaluation :";
+                
+                
+                echo "&nbsp;&nbsp;";
+                for ($x = 0; $x <= $evaluation-1 and $x <= 4; $x++) {
+                    echo "★";
                     } 
                     for ($x = 0; $x <= 4 - $evaluation; $x++) {
-                        echo "☆";
+                    echo "☆";
                     }
+                
 
-                    $requete = "INSERT INTO commentaires (nom, email, commentaire, evaluation) VALUES ('$nom', '$email', '$commentaire', '$evaluation')";
-                    $resultat = mysql_query($requete, $connexion);
-                    if ($resultat) {
-                        echo '<span class="success">Le commentaire a été ajouté!<br>';
-                        echo 'La requête: <br>' . $requete . '<br> a été effectuée !</span>';
-                    }
-                    else {
-                    echo '<span class="alert">La requête n’a pu être exécutee parce que : '
-                        . mysql_error($connexion) . '</span>';
-                    }
+                $requete = "INSERT INTO commentaires (nom, email, commentaire, evaluation) VALUES ('$nom', '$email', '$commentaire', '$evaluation')";
+                $resultat = mysql_query($requete, $connexion);
+                if ($resultat) {
+                    echo '<span class="success">Le commentaire a été ajouté!<br>';
+                    echo 'La requête: <br>' . $requete . '<br> a été effectuée !</span>';
                 }
+                else {
+                echo '<span class="alert">La requête n’a pu être exécutee parce que : '
+                    . mysql_error($connexion) . '</span>';
+                }
+            
                 
             }
             //suppression d'un enregistrement dans la table commentaires
             if (isset($_POST['supprimer'])) {
-                if ($nom == "NESCAP")
-                    echo '<span class="alert">La requête n’a pu être exécutée parce que : you can’t delete me</span>';
-                else {
-                    $requete = "DELETE FROM commentaires WHERE nom='$nom'";
-                    $resultat = mysql_query($requete, $connexion);
-                    if ($resultat) {
-                        echo '<span class="success">Le commentaire a été supprimé!';
-                        echo "La requête: <br>" . $requete . "<br> a été effectuée !</span>";
-                    }
-                    else {
-                        echo '<span class="alert">La requête n’a pu être exécutée parce que : </span>'
-                        . mysql_error($connexion);
-                    }
+                $requete = "DELETE FROM commentaires WHERE nom='$nom'";
+                $resultat = mysql_query($requete, $connexion);
+                if ($resultat) {
+                    echo '<span class="success">Le commentaire a été supprimé!';
+                    echo "La requête: <br>" . $requete . "<br> a été effectuée !</span>";
                 }
-                
+                else {
+                    echo '<span class="alert">La requête n’a pu être exécutée parce que : </span>'
+                    . mysql_error($connexion);
+                }
             }
             //Fin de la connexion à la BDD
             mysql_close();
             ?>
             <button
-            onclick="history.back()"
+            onclick="window.location.href='commentaires.php';"
             class="btn-back"
             >
                 Retour au formulaire

@@ -1,16 +1,11 @@
 @font-face {
-  font-family: futura-medium-bt;
-  src: url(../GFX/fonts/futura/futura-medium-bt.ttf);
-}
-
-@font-face {
   font-family: blatant-bold;
-  src: url(../GFX/fonts/blatant/blatant-bolditalic.otf);
+  src: url(../GFX/fonts/blatant/Blatant-BoldItalic.otf);
 }
 
 @font-face {
   font-family: blatant;
-  src: url(../GFX/fonts/blatant/blatant.otf);
+  src: url(../GFX/fonts/blatant/Blatant.otf);
 }
 
 
@@ -64,7 +59,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: blatant, futura-medium-bt, Arial;
+  font-family: blatant, Arial;
 }
 
 a {
@@ -78,7 +73,7 @@ a:hover {
 
 h1 {
   font-size: 3em;
-  font-family: blatant-bold, Arial;
+  font-family: blatant-bold, blatant, Arial;
   font-weight: bold;
 }
 
@@ -93,7 +88,7 @@ button, .button {
   color: var(--dtxt);
   text-align: center;
   font-size: 24px;
-  font-family: futura-medium-bt, Arial;
+  font-family: blatant;
   line-height: 48px;
   cursor: pointer;
   margin: 0;
@@ -393,7 +388,6 @@ form {
   background-color: var(--inp-txt);
   color: var(--dtxt);
   font-size: 24px;
-  font-family: futura-medium-bt, Arial;
   padding-left: 18px;
   box-shadow: var(--s1);
 }
@@ -441,6 +435,7 @@ form {
 .category-card-cont {
   /* border: lime solid 5px; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -663,7 +658,6 @@ footer {
   background-color: var(--inp-txt);
   color: var(--dtxt);
   font-size: 24px;
-  font-family: futura-medium-bt, Arial;
   padding-left: 18px;
   box-shadow: var(--s1);
 }

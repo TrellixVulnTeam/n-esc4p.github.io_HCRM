@@ -45,6 +45,7 @@
 
       require("connect.php");
       $connexion = mysql_connect(SERVEUR, LOGIN, MDP);
+
       if (!$connexion) {
           echo "LA CONNEXION AU SERVEUR À ECHOUE\n";
           exit;
@@ -58,15 +59,11 @@
       $resultat = mysql_query("SELECT * FROM commentaires ORDER BY id DESC LIMIT 100");
       while ($ligne = mysql_fetch_array($resultat)) {
           echo '<div class="comment card">';
-          echo '<span class="comment-date">' . $ligne['datetime']. '</span>';
+          echo '<span class="comment-date">' . htmlentities($ligne['datetime']) . '</span>';
           echo "<br>";
-          if ($ligne['nom'] == "NESCAP") 
-          echo "<strong><font color='orange'>( le vrai ) " . $ligne['nom'] . "</font></strong>";
-          
-          else 
-          echo $ligne['nom'];
+          echo htmlentities($ligne['nom']);
           echo "&nbsp;&nbsp;";
-          for ($x = 0; $x <= $ligne['evaluation']-1; $x++) {
+          for ($x = 0; $x <= $ligne['evaluation']-1 and $x <= 4; $x++) {
             echo "★";
           } 
           for ($x = 0; $x <= 4 - $ligne['evaluation']; $x++) {
@@ -74,7 +71,7 @@
           }
           // echo $ligne['evaluation'];
           echo "<br/>";
-          echo $ligne['commentaire'];
+          echo htmlentities($ligne['commentaire']);
           echo "&nbsp;&nbsp;";
           echo '</div>';
       }
